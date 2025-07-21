@@ -75,13 +75,20 @@ function getGrade(scores) {
 
 console.log(getGrade(65));
 
-for(let i = 1; i < 101 ; i++){
+for (let i = 1; i < 101; i++) {
     console.log(i)
 }
 
 
 let j = 1;
-while(j < 32){
+while (j < 32) {
     console.log(j);
     j++
 }
+
+let k = 12;
+do {
+    console.log(k);
+    k++
+}
+while (k < 2)
