@@ -92,3 +92,20 @@ do {
     k++
 }
 while (k < 2)
+
+
+for(let l = 1 ; l<201 ; l++){
+    // if(l === 32){
+        //     break;
+        // }
+        
+        if(l === 32 || l === 100){
+            continue 
+        }
+        console.log(l);
+}
+
+
+for(let x = 10 ; x> 0 ; x--){
+    console.log(x);
+}
