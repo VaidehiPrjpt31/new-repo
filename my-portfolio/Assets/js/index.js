@@ -32,7 +32,7 @@ const person = {
     city: "New York"
 }
 
-document.getElementById("demo1").innerHTML = person.name + " Lived in " + person.city;
+document.getElementById("demo").innerHTML = person.name + " Lived in " + person.city;
 
 console.log(!!"");
 console.log(!!"hello");
@@ -108,4 +108,49 @@ for(let l = 1 ; l<201 ; l++){
 
 for(let x = 10 ; x> 0 ; x--){
     console.log(x);
+}
+
+const cars = ['BMW' , "Volvo" , 'Saab' , "Ford"];
+
+let text = "";
+
+list : {
+    text += cars[0] + "<br>";
+    text += cars[1] + "<br>";
+    text += cars[2] + "<br>";
+    text += cars[3] + "<br>";
+    break list;
+}
+
+document.getElementById("demo1").innerHTML = text;
+
+
+for(let p = 1; p < 11 ; p++){
+    console.log(`5 * ${p} =  ${5 * p}`  )
+}
+
+summation = 0;
+for(let e= 1 ; e < 101 ; ++e){
+    summation = summation + e;
+}
+console.log(summation);
+
+for(let o =1 ; o < 51 ; o++ ){
+    if( o%3 === 0){
+        console.log(o);
+    }
+}
+
+let val = prompt('Give a number');
+
+for(let b = 1 ; b <= val ; b++){
+    if(b % 2 === 0){
+        console.log(`${b} is even`);
+    }else{
+        console.log(`${b} is odd`);
+    }
+}
+
+for(let c = 1 ; c < 101 ;  c++){
+    if()
 }
