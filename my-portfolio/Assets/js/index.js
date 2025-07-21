@@ -151,6 +151,18 @@ for(let b = 1 ; b <= val ; b++){
     }
 }
 
+
+count = 0;
 for(let c = 1 ; c < 101 ;  c++){
-    if()
+    if(c % 2 === 0){
+        count++;
+        console.log(c);
+    }
+
+    if(count === 5) break;
 }
+
+// Functions (what why how) 
+// what functions
+
+
