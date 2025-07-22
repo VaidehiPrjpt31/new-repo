@@ -252,7 +252,6 @@ function boom() {
 }
 
 let inner = boom();
-
 inner();
 
 // Lexical scope 
@@ -273,7 +272,6 @@ function nmlk() {
 function SayHi(name = 'Guest') {
     console.log('hi', name);
 }
-
 SayHi();
 
 
@@ -286,7 +284,6 @@ console.log((function () {
 function refd(q, w, e1, ...vale) {
     console.log(q, w, e1, vale);
 }
-
 refd(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 
@@ -299,7 +296,6 @@ function getScore(...scores) {
     })
     return total;
 }
-
 console.log(getScore(12, 20, 39, 45));
 
 
@@ -340,29 +336,24 @@ hyhy(function(){
 
 // hoisting in the functions
 greet(); 
-
  function greet(){
     console.log("Hi!");
 };
 
 
 // write a bmi calculator 
-
 function bmi(weight ,  height){
     return weight / (height*height);
 }
-
 console.log(bmi(50, 1.7).toFixed(2));
 
 
 // discount calculator 
-
 function discoundCalc(discount){
   return function(price){
     return price - price * (discount / 100);
   };
 }
-
 let ten = discoundCalc(10);
 let twenty = discoundCalc(20)
 
