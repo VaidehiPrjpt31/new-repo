@@ -3,23 +3,19 @@
 function numSum(num1, num2) {
     return num1 + num2;
 }
-
 document.getElementById("demo").innerHTML = numSum(20, 30);
 
 
 const fruits = new Map([['graps', '20000'], ['apple', 100], ['orange', 400], ['bluebarries', 300], ['pineapple', 300]]);
-
 let x = fruits.get('apple');
 document.getElementById("demo").innerHTML = "The number of app in frits are " + x;
 
 
 let score = 25;
 let grade = score >= 90 ? "A" : score >= 65 ? "B" : score >= 60 ? "C" : "Fail";
-
 console.log(grade);
 
 a = 0;
-
 if (a) {
     console.log("Truthy");
 } else {
@@ -31,9 +27,7 @@ const person = {
     age: 30,
     city: "New York"
 }
-
 document.getElementById("demo").innerHTML = person.name + " Lived in " + person.city;
-
 console.log(!!"");
 console.log(!!"hello");
 console.log(!!0);
@@ -61,7 +55,6 @@ console.log(!!1);
 
 
 // early return patterns
-
 function getGrade(scores) {
     if (scores >= 90 && scores <= 100) return "A"
     if (scores >= 80 && scores <= 89) return "B"
@@ -74,11 +67,9 @@ function getGrade(scores) {
 
 
 console.log(getGrade(65));
-
 // for (let i = 1; i < 101; i++) {
 //     console.log(i)
 // }
-
 
 let j = 1;
 while (j < 32) {
@@ -98,7 +89,6 @@ for (let l = 1; l < 201; l++) {
     // if(l === 32){
     //     break;
     // }
-
     if (l === 32 || l === 100) {
         continue
     }
@@ -111,9 +101,7 @@ for (let x = 10; x > 0; x--) {
 }
 
 const cars = ['BMW', "Volvo", 'Saab', "Ford"];
-
 let text = "";
-
 list: {
     text += cars[0] + "<br>";
     text += cars[1] + "<br>";
@@ -121,9 +109,7 @@ list: {
     text += cars[3] + "<br>";
     break list;
 }
-
 document.getElementById("demo1").innerHTML = text;
-
 
 for (let p = 1; p < 11; p++) {
     console.log(`5 * ${p} =  ${5 * p}`)
@@ -140,6 +126,7 @@ for (let o = 1; o < 51; o++) {
         console.log(o);
     }
 }
+
 
 // let val = prompt('Give a number');
 
