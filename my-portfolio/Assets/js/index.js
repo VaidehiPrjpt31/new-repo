@@ -314,3 +314,109 @@ function getScore(...scores) {
 }
 
 console.log(getScore(12, 20, 39, 45));
+
+
+// early return
+ 
+function earlyu(agees){
+    if(agees < 18)  return 'tooo young for vote';
+    return 'Allowed';
+}
+console.log(earlyu(6));
+
+//  what if function returns nothings 
+ function f(){
+    return;
+ }
+console.log(f());
+
+
+// first class function 
+function sayHello(){
+    return "Hello ";
+}
+
+function greetings(msgHello , name){
+    console.log(msgHello() + name)
+}
+greetings(sayHello , "Vaidehi")
+
+
+
+// pass a funciton into another function  and execute it 
+function hyhy(val){
+  val();
+}
+hyhy(function(){
+    console.log("ehey");
+})
+
+// hoisting in the functions
+greet(); 
+
+ function greet(){
+    console.log("Hi!");
+};
+
+
+// write a bmi calculator 
+
+function bmi(weight ,  height){
+    return weight / (height*height);
+}
+
+console.log(bmi(50, 1.7).toFixed(2));
+
+
+// discount calculator 
+
+function discoundCalc(discount){
+  return function(price){
+    return price - price * (discount / 100);
+  };
+}
+
+let ten = discoundCalc(10);
+let twenty = discoundCalc(20)
+
+
+console.log(ten(1200));
+console.log(twenty(2930));
+
+
+function counters(){
+    let count = 0;
+    return function(){
+        count++;
+        return count;
+    };
+}
+
+let c1 = counters();
+console.log(c1());
+console.log(c1());
+console.log(c1());
+console.log(c1());
+console.log(c1());
+
+
+let d1 = counters();
+console.log(d1());
+console.log(d1());
+console.log(d1());
+console.log(d1());
+console.log(d1());
+console.log(d1());
+console.log(d1());
+console.log(d1());
+console.log(d1());
+console.log(d1());
+
+
+
+(function(){
+    const password = "Secret Password";
+    console.log(password);
+})();
+
+// console.log(password);
