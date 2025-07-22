@@ -296,21 +296,21 @@ console.log((function () {
 
 // rest function
 
-function refd(q,w,e1,...vale){
-console.log(q,w,e1,vale);
+function refd(q, w, e1, ...vale) {
+    console.log(q, w, e1, vale);
 }
 
-refd(1,2,3,4,5,6,7,8,9,10);
+refd(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 
 // use rest parameters  to accepts any number od score and return the total
 
-    function getScore(...scores){
-        let total = 0;
-        scores.forEach(function(val){
-            total = total + val ;
-        })
-        console.log(total);
-    }
+function getScore(...scores) {
+    let total = 0;
+    scores.forEach(function (val) {
+        total = total + val;
+    })
+    return total;
+}
 
-    getScore(12, 20 , 39, 45);
+console.log(getScore(12, 20, 39, 45));
