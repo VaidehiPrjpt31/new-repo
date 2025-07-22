@@ -193,8 +193,15 @@ kkrh();
 let apl = () => {
     console.log("bonjoure");
 }
+apl();
 
+// fat arrow examples
 
+let multiply = (t, r) => {
+    return t * r;
+}
+
+console.log(multiply(10, 20));
 
 function learn(v1) {
     console.log(`${v1} is a course`)
@@ -210,8 +217,6 @@ function XYZ(...val) {
 }
 
 XYZ(1, 2, 3, 4, 5, 6, 7, 8, 9);
-
-
 
 
 function abcd(val) {
@@ -244,7 +249,7 @@ hiu();
 
 
 // this function is impure function 
-function hoo(){
+function hoo() {
     return any++;
 }
 
@@ -252,9 +257,9 @@ console.log(hoo());
 
 // clouser function - that is return a function in the function and use the variable of the parent function and it is  mandetory to use that function variable 
 
-function boom(){
+function boom() {
     let d = "Nothing but a outer function of the inner clouser function "
-    return function(){
+    return function () {
         console.log(d);
     }
 }
@@ -263,3 +268,49 @@ let inner = boom();
 
 inner();
 
+// Lexical scope 
+
+function nmlk() {
+    let l = 990;
+    function erty() {
+        let w = 20;
+        function yuio() {
+            let non = 1029;
+        }
+    }
+}
+
+
+// gusess the answer (this is the quetion)
+
+function SayHi(name = 'Guest') {
+    console.log('hi', name);
+}
+
+SayHi();
+
+
+console.log((function () {
+    return "anthing";
+})());
+
+// rest function
+
+function refd(q,w,e1,...vale){
+console.log(q,w,e1,vale);
+}
+
+refd(1,2,3,4,5,6,7,8,9,10);
+
+
+// use rest parameters  to accepts any number od score and return the total
+
+    function getScore(...scores){
+        let total = 0;
+        scores.forEach(function(val){
+            total = total + val ;
+        })
+        console.log(total);
+    }
+
+    getScore(12, 20 , 39, 45);
