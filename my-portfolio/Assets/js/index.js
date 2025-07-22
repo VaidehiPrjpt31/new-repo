@@ -94,27 +94,27 @@ do {
 while (k < 2)
 
 
-for(let l = 1 ; l<201 ; l++){
+for (let l = 1; l < 201; l++) {
     // if(l === 32){
-        //     break;
-        // }
-        
-        if(l === 32 || l === 100){
-            continue 
-        }
-        console.log(l);
+    //     break;
+    // }
+
+    if (l === 32 || l === 100) {
+        continue
+    }
+    console.log(l);
 }
 
 
-for(let x = 10 ; x> 0 ; x--){
+for (let x = 10; x > 0; x--) {
     console.log(x);
 }
 
-const cars = ['BMW' , "Volvo" , 'Saab' , "Ford"];
+const cars = ['BMW', "Volvo", 'Saab', "Ford"];
 
 let text = "";
 
-list : {
+list: {
     text += cars[0] + "<br>";
     text += cars[1] + "<br>";
     text += cars[2] + "<br>";
@@ -125,44 +125,105 @@ list : {
 document.getElementById("demo1").innerHTML = text;
 
 
-for(let p = 1; p < 11 ; p++){
-    console.log(`5 * ${p} =  ${5 * p}`  )
+for (let p = 1; p < 11; p++) {
+    console.log(`5 * ${p} =  ${5 * p}`)
 }
 
 summation = 0;
-for(let e= 1 ; e < 101 ; ++e){
+for (let e = 1; e < 101; ++e) {
     summation = summation + e;
 }
 console.log(summation);
 
-for(let o =1 ; o < 51 ; o++ ){
-    if( o%3 === 0){
+for (let o = 1; o < 51; o++) {
+    if (o % 3 === 0) {
         console.log(o);
     }
 }
 
 let val = prompt('Give a number');
 
-for(let b = 1 ; b <= val ; b++){
-    if(b % 2 === 0){
+for (let b = 1; b <= val; b++) {
+    if (b % 2 === 0) {
         console.log(`${b} is even`);
-    }else{
+    } else {
         console.log(`${b} is odd`);
     }
 }
 
 
 count = 0;
-for(let c = 1 ; c < 101 ;  c++){
-    if(c % 2 === 0){
+for (let c = 1; c < 101; c++) {
+    if (c % 2 === 0) {
         count++;
         console.log(c);
     }
 
-    if(count === 5) break;
+    if (count === 5) break;
 }
 
 // Functions (what why how) 
 // what functions
 
+let nyc = function () {
+    console.log("helllllloooooooo");
+}
 
+nyc();
+
+
+// function declaration
+
+function ABCD() {
+    console.log("hello");
+}
+
+ABCD();
+
+// function expression  
+
+let kkrh = function () {
+    console.log("hello birds");
+}
+
+kkrh();
+
+// arrow functions
+
+let apl = () => {
+    console.log("bonjoure");
+}
+
+
+
+function learn(v1) {
+    console.log(`${v1} is a course`)
+}
+
+learn('PHP');
+learn('HTML');
+learn('CSS');
+learn('JS');
+
+function XYZ(...val) {
+    console.log(val);
+}
+
+XYZ(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+
+
+
+function abcd(val) {
+    val();
+}
+abcd(function () {
+    console.log("hey");
+})
+
+function klmn(){
+    return function(){
+        console.log('sdhafhvfjhsvdfbsdfsfsvja');
+    }
+}
+klmn()();
