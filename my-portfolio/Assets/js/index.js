@@ -75,9 +75,9 @@ function getGrade(scores) {
 
 console.log(getGrade(65));
 
-for (let i = 1; i < 101; i++) {
-    console.log(i)
-}
+// for (let i = 1; i < 101; i++) {
+//     console.log(i)
+// }
 
 
 let j = 1;
@@ -141,15 +141,15 @@ for (let o = 1; o < 51; o++) {
     }
 }
 
-let val = prompt('Give a number');
+// let val = prompt('Give a number');
 
-for (let b = 1; b <= val; b++) {
-    if (b % 2 === 0) {
-        console.log(`${b} is even`);
-    } else {
-        console.log(`${b} is odd`);
-    }
-}
+// for (let b = 1; b <= val; b++) {
+//     if (b % 2 === 0) {
+//         console.log(`${b} is even`);
+//     } else {
+//         console.log(`${b} is odd`);
+//     }
+// }
 
 
 count = 0;
@@ -221,9 +221,45 @@ abcd(function () {
     console.log("hey");
 })
 
-function klmn(){
-    return function(){
+function klmn() {
+    return function () {
         console.log('sdhafhvfjhsvdfbsdfsfsvja');
     }
 }
 klmn()();
+
+
+// pure and impure functions
+
+// a function that doesent change the outer value of the funtion
+
+
+let any = "11";
+
+// this function is pure function 
+function hiu() {
+    console.log("nothing change inside the funciton or outside the functions");
+}
+hiu();
+
+
+// this function is impure function 
+function hoo(){
+    return any++;
+}
+
+console.log(hoo());
+
+// clouser function - that is return a function in the function and use the variable of the parent function and it is  mandetory to use that function variable 
+
+function boom(){
+    let d = "Nothing but a outer function of the inner clouser function "
+    return function(){
+        console.log(d);
+    }
+}
+
+let inner = boom();
+
+inner();
+
