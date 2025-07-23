@@ -398,3 +398,15 @@ console.log(d1());
 })();
 
 // console.log(password);
+
+
+
+// ARRAYS
+
+function aere(){
+    const CARS = new Array(['Saab' , 'Volvo' , 'BMW']);
+    console.log(CARS);
+
+}
+
+aere();
