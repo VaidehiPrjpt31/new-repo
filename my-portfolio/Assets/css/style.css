@@ -115,9 +115,13 @@ section {
 }
 
 .box-item{
-    max-width: calc((100% / 2) - 15px);
+    max-width: calc((100% / 3) - 20px);
     width: 100%;
     text-align: center;
     border: 1px solid #dedede;
     padding: 20px;
 }
+
+
+
+
