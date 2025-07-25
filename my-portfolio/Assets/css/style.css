@@ -78,6 +78,11 @@ button:focus {
     border: none;
 }
 
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 ul {
     margin: 0;
@@ -144,4 +149,16 @@ section {
     padding: 20px;
     border: 1px solid darkslategrey;
     border-radius: 10px ;
+}
+
+.boxed2_grid{
+    margin: 0 auto;
+    columns: 3 300px;
+    column-gap: 20px;
+}
+
+.boxed2_grid img{
+    display: block;
+    margin-bottom: 20px ;
+    border-radius: 10px;
 }
